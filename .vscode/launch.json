@@ -1,0 +1,61 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch knighttour",
+            "request": "launch",
+            "mainClass": "knighttour",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch sudoku",
+            "request": "launch",
+            "mainClass": "sudoku",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch nqueen",
+            "request": "launch",
+            "mainClass": "nqueen",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch brutequeen",
+            "request": "launch",
+            "mainClass": "brutequeen",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch tree",
+            "request": "launch",
+            "mainClass": "tree",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Recursion",
+            "request": "launch",
+            "mainClass": "Recursion",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal"
+        }
+    ]
+}
