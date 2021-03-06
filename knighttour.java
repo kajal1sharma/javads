@@ -6,13 +6,15 @@ public class knighttour {
         return false;
     }
     static boolean knight_tour(int board[][],int movenumber,int x,int y){
-        if(movenumber==64){
+        if(movenumber==65){
             return true;
         }
 
-        int xoptions[]={-2,-2,-1,1,2,2,1,-1};
-        int yoptions[]={-1,1,2,2,1,-1,-2,-2};
-
+      //  int xoptions[]={-2,-2,-1,1,2, 2, 1,-1};
+        //int yoptions[]={-1, 1, 2,2,1,-1,-2,-2};
+        //corrected form for faster results
+        int xoptions[] = { 2, 1, -1, -2, -2, -1, 1, 2 };
+        int yoptions[] = { 1, 2, 2,   1, -1, -2, -2, -1 };
         for(int i=0;i<8;i++){
             int nx=x+xoptions[i];
             int ny=y+yoptions[i];
