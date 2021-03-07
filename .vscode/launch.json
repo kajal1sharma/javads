@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch leader",
+            "request": "launch",
+            "mainClass": "array.leader",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch knightAll",
+            "request": "launch",
+            "mainClass": "knightAll",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch mcoloring",
             "request": "launch",
             "mainClass": "mcoloring",
