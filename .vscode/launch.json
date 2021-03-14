@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch unordered",
+            "request": "launch",
+            "mainClass": "array.unordered",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch orderedfindmissing",
+            "request": "launch",
+            "mainClass": "array.orderedfindmissing",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch zigzag",
+            "request": "launch",
+            "mainClass": "array.zigzag",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch shiftby1",
             "request": "launch",
             "mainClass": "array.shiftby1",
