@@ -1,0 +1,35 @@
+Q1:Reverse an Array
+Q2:Rotate an Array
+Q3:Convert array into Zig-Zag fashion
+Given an array of DISTINCT elements, rearrange the 
+elements of array in zig-zag fashion in O(n) time. The 
+converted array should be in form a < b > c < d > e < f.
+Input: arr[] = {4, 3, 7, 8, 6, 2, 1}
+Output: arr[] = {3, 7, 4, 8, 2, 6, 1}
+Q4:Find the Leader Element in an Array
+Q5: Find the Missing Number
+You are given a list of n-1 integers and these integers 
+are in the range of 1 to n. There are no duplicates in the 
+list. One of the integers is missing in the list. Write an 
+efficient code to find the missing integer.
+Input: arr[] = {1, 2, 4, 6, 3, 7, 8}
+Output: 5
+Q6:Given an integer array A that contains only integers 0 
+and 1. Write a function to sort this array
+Sample Input :
+7
+0 1 1 0 1 0 1
+Sample Output :0 0 0 1 1 1 1
+
+Q7:Given an integer array containing only 0s, 1s and 2s. 
+Write a solution to sort this array using one scan only.
+You need to change in the given array itself. So no need 
+to return or print anything.
+Input format :
+Line 1 : Integer n (Array Size)
+Line 2 : Array elements (separated by space)
+Sample Input:
+7
+0 1 2 0 2 0 1
+Sample Output:
+0 0 0 1 1 2 2
