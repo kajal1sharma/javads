@@ -33,3 +33,6 @@ Sample Input:
 0 1 2 0 2 0 1
 Sample Output:
 0 0 0 1 1 2 2
+Q8:Third Second , First Largest in array
+Given a random integer array of size n, find and return the Third, second , First largest element present in the 
+array.
