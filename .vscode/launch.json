@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch twoSum",
+            "request": "launch",
+            "mainClass": "array.twoSum",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch unordered",
             "request": "launch",
             "mainClass": "array.unordered",
