@@ -4,8 +4,8 @@ public class twoSum{
 //with repetative elements try hashing
     public static void main(String[] args) {
         //two elements can make up for this sum 
-        int arr[]={2,4,7,12,17,5,8};
-        int key=9;
+        int arr[]={5,2,4,7,12,17,8};
+        int key=10;
 
 
         HashMap<Integer,Integer> hm=new HashMap<>();
@@ -18,7 +18,7 @@ public class twoSum{
         for(int i=0;i<arr.length;i++){
             int sum=arr[i];
             int left=key-arr[i];
-            if(hm.containsKey(left)){
+            if(sum!=left && hm.containsKey(left)){
                 System.out.println(arr[i]+" "+left);
                 break;
             }
