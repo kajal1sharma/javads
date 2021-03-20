@@ -7,21 +7,40 @@ public class twoSum{
         int arr[]={2,4,7,12,17,5,8};
         int key=9;
 
-        //hashing
 
-        int hash[]=new int[50];
+        HashMap<Integer,Integer> hm=new HashMap<>();
+
         for(int i=0;i<arr.length;i++){
-            hash[arr[i]]=1;
+            hm.put(arr[i],1);
         }
+        //System.out.println(hm);
 
         for(int i=0;i<arr.length;i++){
             int sum=arr[i];
-            int left=key-sum;
-            if(hash[left]==1){
+            int left=key-arr[i];
+            if(hm.containsKey(left)){
                 System.out.println(arr[i]+" "+left);
                 break;
             }
         }
+
+        // //hashing
+
+        // int hash[]=new int[50];
+        // for(int i=0;i<arr.length;i++){
+        //     hash[arr[i]]=1;
+        // }
+
+        // for(int i=0;i<arr.length;i++){
+        //     int sum=arr[i];
+        //     int left=key-sum;
+        //     if(left<key && hash[left]==1){
+        //         hash[left]=0;
+        //         hash[arr[i]]=0;
+        //         System.out.println(arr[i]+" "+left);
+        //       //  break;
+        //     }
+        // }
 
 
 
