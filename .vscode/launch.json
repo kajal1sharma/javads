@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch prefixSum",
+            "request": "launch",
+            "mainClass": "array.prefixSum",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch largetnumber",
+            "request": "launch",
+            "mainClass": "array.largetnumber",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch zeroone",
+            "request": "launch",
+            "mainClass": "array.zeroone",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch twoSum",
             "request": "launch",
             "mainClass": "array.twoSum",

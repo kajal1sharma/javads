@@ -43,3 +43,19 @@ Examples :
 Input : -12, 11, -13, -5, 6, -7, 5, -3, -6
 Output :-12 -13 -5 -7 -3 -6 11 6 
 Q10:Majority Element in N Size Array
+
+
+21/03
+=====
+
+Q1:881(boats to save people)
+Q2:747
+Q3:169
+Q4:229
+Q5:769
+Q7:768
+Q8:795
+Q9:628
+Q10:equillibrium index=>right side and left side sum from an indedx is equal
+=>prefix sum 
+=>sum and newsum
