@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch swprob1",
+            "request": "launch",
+            "mainClass": "array.swprob1",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Slidingwin",
+            "request": "launch",
+            "mainClass": "array.Slidingwin",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch prefixSum",
             "request": "launch",
             "mainClass": "array.prefixSum",
