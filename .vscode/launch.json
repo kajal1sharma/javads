@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "array.BinarySearch",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch maxcontiguous",
             "request": "launch",
             "mainClass": "array.maxcontiguous",
