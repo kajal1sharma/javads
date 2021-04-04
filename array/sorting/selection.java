@@ -11,6 +11,7 @@ public class selection {
                     mi=j;
                 }
             }
+            //shifting the elemnets mi
             int temp=arr[mi];
             for(int k=mi-1;k>=i;k--){
                 arr[k+1]=arr[k];
