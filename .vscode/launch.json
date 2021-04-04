@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch selection",
+            "request": "launch",
+            "mainClass": "array.sorting.selection",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Buuble",
+            "request": "launch",
+            "mainClass": "array.sorting.Buuble",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch smallestsortedrot",
             "request": "launch",
             "mainClass": "array.smallestsortedrot",
