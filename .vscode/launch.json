@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Heapsort",
+            "request": "launch",
+            "mainClass": "array.sorting.Heapsort",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mergesort",
+            "request": "launch",
+            "mainClass": "array.sorting.Mergesort",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch quicksort",
+            "request": "launch",
+            "mainClass": "array.sorting.quicksort",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch selection",
             "request": "launch",
             "mainClass": "array.sorting.selection",
