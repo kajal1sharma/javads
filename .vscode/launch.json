@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch singlylinkedlist",
+            "request": "launch",
+            "mainClass": "linkedlist.singlylinkedlist",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch Heapsort",
             "request": "launch",
             "mainClass": "array.sorting.Heapsort",
