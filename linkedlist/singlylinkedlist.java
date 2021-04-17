@@ -36,6 +36,16 @@ public class singlylinkedlist {
         }
         return head;
     }
+
+
+    static void print(Node head){
+
+        while(head!=null){
+            System.out.println(head.data);
+            head=head.next;
+        }
+
+    }
 public static void main(String[] args) {
     
     Node head=null;
@@ -44,6 +54,8 @@ public static void main(String[] args) {
     insertll(40,head);
     insertll(50,head);
     insertll(60,head);
+
+    print(head);
     // Node head;
     // head=new Node(20,"tina");
     // head.next=new Node(30,"priya");
