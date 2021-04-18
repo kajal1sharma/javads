@@ -59,6 +59,16 @@ static void printrec(Node head){
 
 }
 
+static void doubledata(Node head){
+    if(head==null){
+        return;
+    }
+    else{
+        head.data=2*head.data;
+        doubledata(head.next);
+    }
+}
+//data of node swapped
     static void swap(Node head){
 
         while(head!=null && head.next!=null ){
@@ -69,6 +79,30 @@ static void printrec(Node head){
             head=head.next.next;
         }
     }
+
+//nodes swapped
+
+static Node swapnode(Node head){
+    Node root=head;
+    if(head.next!=null){
+        root=head.next;
+    }
+    Node prev=null;
+    while(head!=null && head.next!=null ){
+        Node temp=head.next;
+        head.next=temp.next;
+        temp.next=head;
+        if(prev==null){
+            prev=head;
+        }
+        else{
+            prev.next=temp;
+            prev=head;
+        }
+        head=head.next;
+    }
+    return root;
+}
 public static void main(String[] args) {
     
     Node head=null;
@@ -79,6 +113,8 @@ public static void main(String[] args) {
     insertll(60,head);
     insertll(70,head);
    // print(head);
+//   doubledata(head);
+swapnode(head);
     printrec(head);
     // swap(head);
     // print(head);
