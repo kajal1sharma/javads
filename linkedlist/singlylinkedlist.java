@@ -103,6 +103,9 @@ static Node swapnode(Node head){
     }
     return root;
 }
+static Node insertatstart(int data,Node head){
+
+}
 public static void main(String[] args) {
     
     Node head=null;
@@ -112,9 +115,10 @@ public static void main(String[] args) {
     insertll(50,head);
     insertll(60,head);
     insertll(70,head);
+    head=insertatstart(80,head);
    // print(head);
 //   doubledata(head);
-swapnode(head);
+    head=swapnode(head);
     printrec(head);
     // swap(head);
     // print(head);
