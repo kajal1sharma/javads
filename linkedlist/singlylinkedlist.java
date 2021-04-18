@@ -41,10 +41,33 @@ public class singlylinkedlist {
     static void print(Node head){
 
         while(head!=null){
-            System.out.println(head.data);
+            System.out.print(head.data+" ");
             head=head.next;
         }
+System.out.println();
+    }
+//recursion 
+static void printrec(Node head){
 
+    if(head==null){
+        return;
+    }
+    else{
+        System.out.print(head.data+" ");
+        printrec(head.next);
+    }
+
+}
+
+    static void swap(Node head){
+
+        while(head!=null && head.next!=null ){
+            int temp=head.data;
+            head.data=head.next.data;
+            head.next.data=temp;
+
+            head=head.next.next;
+        }
     }
 public static void main(String[] args) {
     
@@ -54,8 +77,11 @@ public static void main(String[] args) {
     insertll(40,head);
     insertll(50,head);
     insertll(60,head);
-
-    print(head);
+    insertll(70,head);
+   // print(head);
+    printrec(head);
+    // swap(head);
+    // print(head);
     // Node head;
     // head=new Node(20,"tina");
     // head.next=new Node(30,"priya");
