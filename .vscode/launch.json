@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch sll",
+            "request": "launch",
+            "mainClass": "sll",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch singlylinkedlist",
+            "request": "launch",
+            "mainClass": "singlylinkedlist",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch singlylinkedlist",
             "request": "launch",
             "mainClass": "linkedlist.singlylinkedlist",
