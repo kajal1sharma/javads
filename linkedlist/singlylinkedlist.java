@@ -127,6 +127,21 @@ public static int search(Node head,int key){
     }
     return -1;
 } 
+static boolean detectcycle(Node head){
+Node first=head;
+Node second=head.next;
+
+while(second!=null && second.next!=null){
+    if(first==second){
+        return true;
+    }
+    else{
+        first=first.next;
+        second=second.next.next;
+    }
+}
+return false;
+}
 public static void main(String[] args) {
     
     Node head=null;
@@ -137,10 +152,20 @@ public static void main(String[] args) {
     insertll(60,head);
     insertll(70,head);
     head=insertatstart(80,head);
-    printrec(head);
-    int key=500;
-    int index=search(head,key);
-    System.out.println("index: "+ index);
+    Node temp=new Node(45);
+    head.next.next.next.next.next.next=temp;
+    temp.next=head.next.next.next;
+    boolean flag=detectcycle(head);
+    if(flag==true){
+        System.out.println("there is a cycle");
+    }
+    else{
+        System.out.println("there is no cycle");
+    }
+    // printrec(head);
+    // int key=500;
+    // int index=search(head,key);
+    // System.out.println("index: "+ index);
 //   doubledata(head);
    // head=swapnode(head);
    // printrec(head);
