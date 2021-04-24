@@ -155,6 +155,24 @@ static int kthstart(Node head,int key){
         return -1;
     }
 }
+static int kthfromend(Node head,int key){
+   Node first,second;
+   first=head;
+    while(key!=1 && first!=null){
+        key--;
+        first=first.next;
+    }
+    if(key==1){
+        second=head;
+
+        while(first.next!=null){
+            second=second.next;
+            first=first.next;
+        }
+        return second.data;
+    }
+    return -1;
+}
 public static void main(String[] args) {
     
     Node head=null;
@@ -167,7 +185,8 @@ public static void main(String[] args) {
     head=insertatstart(80,head);
     printrec(head);
     System.out.println();
-    int ele=kthstart(head,4);
+    // int ele=kthstart(head,4);
+    int ele=kthfromend(head,4);
     System.out.println(ele);
     // Node temp=new Node(45);
     // head.next.next.next.next.next.next=temp;
