@@ -142,6 +142,19 @@ while(second!=null && second.next!=null){
 }
 return false;
 }
+static int kthstart(Node head,int key){
+
+    while(key!=1 && head!=null){
+        key--;
+        head=head.next;
+    }
+    if(key==1){
+        return head.data;
+    }
+    else{
+        return -1;
+    }
+}
 public static void main(String[] args) {
     
     Node head=null;
@@ -152,16 +165,20 @@ public static void main(String[] args) {
     insertll(60,head);
     insertll(70,head);
     head=insertatstart(80,head);
-    Node temp=new Node(45);
-    head.next.next.next.next.next.next=temp;
-    temp.next=head.next.next.next;
-    boolean flag=detectcycle(head);
-    if(flag==true){
-        System.out.println("there is a cycle");
-    }
-    else{
-        System.out.println("there is no cycle");
-    }
+    printrec(head);
+    System.out.println();
+    int ele=kthstart(head,4);
+    System.out.println(ele);
+    // Node temp=new Node(45);
+    // head.next.next.next.next.next.next=temp;
+    // temp.next=head.next.next.next;
+    // boolean flag=detectcycle(head);
+    // if(flag==true){
+    //     System.out.println("there is a cycle");
+    // }
+    // else{
+    //     System.out.println("there is no cycle");
+    // }
     // printrec(head);
     // int key=500;
     // int index=search(head,key);
