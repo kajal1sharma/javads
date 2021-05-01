@@ -183,13 +183,15 @@ public static void main(String[] args) {
     insertll(60,head);
     insertll(70,head);
     head=insertatstart(80,head);
+
+    
     printrec(head);
     System.out.println();
     // int ele=kthstart(head,4);
     int ele=kthfromend(head,4);
     System.out.println(ele);
     // Node temp=new Node(45);
-    // head.next.next.next.next.next.next=temp;
+     head.next.next.next.next.next.next=head;
     // temp.next=head.next.next.next;
     // boolean flag=detectcycle(head);
     // if(flag==true){

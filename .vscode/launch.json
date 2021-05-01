@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Stackarr",
+            "request": "launch",
+            "mainClass": "Stackarr",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
+            "name": "Launch doublyll",
+            "request": "launch",
+            "mainClass": "doublyll",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch sll",
             "request": "launch",
             "mainClass": "sll",
