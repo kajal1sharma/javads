@@ -34,7 +34,12 @@ class Stack{
     }
 
     public int topele(){
-        return this.top>-1?this.arr[this.top]:-1;
+        if(this.top>-1){
+        return this.arr[this.top];
+        }
+        else 
+        return Integer.MIN_VALUE;
+        
     }
 
     public boolean empty(){
