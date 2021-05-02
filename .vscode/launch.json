@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stacklinkedlist",
+            "request": "launch",
+            "mainClass": "stacklinkedlist",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch Stackarr",
             "request": "launch",
             "mainClass": "Stackarr",
