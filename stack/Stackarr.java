@@ -38,8 +38,15 @@ class Stack{
         return this.arr[this.top];
         }
         else 
-        return Integer.MIN_VALUE;
-        
+        {
+          try{
+              throw(new Exception("Empty stack"));
+          }
+          catch(Exception e){
+            System.out.println(e);
+          }
+        }
+        return -1;
     }
 
     public boolean empty(){
