@@ -1,8 +1,13 @@
+import java.util.Comparator;
 import java.util.PriorityQueue;
-public class Main
+public class priorityque implements Comparator<Integer>
 {
+    @Override
+    public int compare(Integer a,Integer b){
+        return b-a;
+    }
 	public static void main(String[] args) {
-		PriorityQueue<Integer> pq=new PriorityQueue<Integer>();
+		PriorityQueue<Integer> pq=new PriorityQueue<Integer>(new priorityque());
 		
 		pq.add(12);
 		pq.add(14);
@@ -16,4 +21,6 @@ public class Main
 		pq.remove();
 			System.out.println(pq+"     "+pq.peek());
 	}
+
+    
 }
