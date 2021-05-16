@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
         "stack",
+        "queue",
         "linkedlist",
-        "queue"
+        "tree"
     ]
 }

@@ -61,4 +61,39 @@ class mycomparator implements Comparator<Point>{
         return p2.count-p1.count;
     }
 }
+/*
 
+class Solution {
+public String reorganizeString(String s) {
+if(s.length() == 1) return s;
+int[] freq = new int[26];
+int max=1, maxLetter=0;
+for(char ch:s.toCharArray()){
+freq[ch-'a']++;
+if(freq[ch-'a'] > max){
+max = freq[ch-'a'];
+maxLetter = ch-'a';
+}
+}
+if(max > (s.length()+1)/2){
+return "";
+}
+char res[] = new char[s.length()];
+int index=0;
+while(freq[maxLetter]-- > 0){
+res[index] = (char)('a'+maxLetter);
+index = index +2;
+}
+for(int i=0;i<freq.length;i++){
+while(freq[i]-- > 0){
+if(index >= s.length()){
+index=1;
+}
+res[index] = (char)('a' + i);
+index = index +2;
+}
+}
+return new String(res);
+}
+}
+*/
