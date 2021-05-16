@@ -1,5 +1,5 @@
 import org.graalvm.compiler.graph.Node;
-
+import java.util.*;
 class Node{
     int data;
     Node left;
@@ -13,12 +13,35 @@ class Node{
     }
 } 
 public class treeds {
+    public static void inordernonrecursive(Node root){
+        Stack<Node> st=new Stack<Node>();
+    
+        while(true){
+            //inserting the left part
+            while(root!=null){
+                st.push(root);
+                root=root.left;
+            }
+            if(st.empty()){
+                break;
+            }
+            root=st.peek();
+            st.pop();
+            
+            System.out.print(root.data+"  ");
+            
+            root=root.right;
+            
+            
+        }
+        
+        }
     public static void inorder(Node root){
         if(root==null){
             return ;
         }
         inorder(root.left);
-        System.out.println(root.data+"  ");
+        System.out.print(root.data+"  ");
         inorder(root.right);
     }
    public static void main(String[] args) {
@@ -39,5 +62,6 @@ public class treeds {
        root.right.right=new Node(24);
 
        inorder(root);
+       inordernonrecursive(root);
    } 
 }
