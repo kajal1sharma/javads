@@ -60,7 +60,7 @@ public class validbstornot {
         root.left.left=new Node(5);
         root.left.right=new Node(18);
 
-        root.right.left=new Node(21);
+        root.right.left=new Node(19);
         root.right.right=new Node(26);
 
         boolean b=validbst(root);
