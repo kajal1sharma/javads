@@ -103,7 +103,7 @@ static int updateheight(Nodess root){
         }
         if(balance <-1 && key<root.right.data){
             rightrotation(root.right);
-            leftrotation(root);
+            return leftrotation(root);
         }
 
         return root;
