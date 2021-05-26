@@ -53,7 +53,7 @@ static int updateheight(Nodess root){
     }
     return root.height;
 }
-    static Nodess leftrotation(Nodess root){
+    static Nodess rightrotation(Nodess root){
             Nodess newroot=root.left;
             Nodess temp=root;
 
@@ -64,7 +64,7 @@ static int updateheight(Nodess root){
 
 
     }
-    static Nodess rightrotation(Nodess root){
+    static Nodess leftrotation(Nodess root){
         Nodess newroot=root.right;
         Nodess temp=root;
 
@@ -92,14 +92,14 @@ static int updateheight(Nodess root){
         int balance=getbalancefactor(root);
 //System.out.println(balance);
         if(balance>1 && key<root.left.data){
-            return leftrotation(root);
+            return rightrotation(root);
         }
         if(balance >1 && key>root.left.data){
             leftrotation(root.left);
             return rightrotation(root);
         }
         if(balance<-1 && key>root.right.data){
-            return rightrotation(root);
+            return leftrotation(root);
         }
         if(balance <-1 && key<root.right.data){
             rightrotation(root.right);
