@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch fibo",
+            "request": "launch",
+            "mainClass": "fibo",
+            "projectName": "javads_da7dabf8"
+        },
+        {
+            "type": "java",
             "name": "Launch avl",
             "request": "launch",
             "mainClass": "avl",

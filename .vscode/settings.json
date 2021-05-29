@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "tree",
         "stack",
         "queue",
         "linkedlist",
-        "tree"
+        "dynamicprogramming"
     ]
 }
