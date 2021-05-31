@@ -18,6 +18,10 @@ public class subset {
                     matrix[i][j]=1;
                 }
                 else{
+                    if(matrix[i-1][j]==1){
+                        matrix[i][j]=1;
+                    }
+                    else{
                     int a=j-set[i-1];//4  5
                     int b=matrix[i-1][a];
                     if(b==1){
@@ -26,6 +30,7 @@ public class subset {
                     else{
                         matrix[i][j]=0;
                     }
+                }
                 }
             }
         }
